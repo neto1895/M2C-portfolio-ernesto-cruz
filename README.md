@@ -1,5 +1,5 @@
 # Module 2 Challenge [Bootcamp Web Developer]
-(https://img.shields.io/badge/bootcamp-Web%20Developer-red)
+![Web Developer](https://img.shields.io/badge/bootcamp-Web%20Developer-red)
 
 ## Description
 
@@ -29,4 +29,4 @@ N/A
 
 N/A
 
-(https://img.shields.io/badge/bootcamp-Web%20Developer-red)
+![Web Developer](https://img.shields.io/badge/bootcamp-Web%20Developer-red)
