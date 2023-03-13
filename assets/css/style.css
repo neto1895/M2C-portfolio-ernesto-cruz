@@ -1,11 +1,70 @@
 /* Set default styles for the whole page */
+:root{
+  --color1: rgb(220, 245, 240);
+  --color2: gray;
+  --color3: #283957;
+  --color4: rgb(31 36 36);
+  --color5: rgb(20, 33, 43);
+}
+h2, p{
+  color: var(--color5);
+}
+h2.dark, p.dark{
+  color: var(--color1);
+}
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    
+  }
+  /* toggle code */
+  body.dark {
+    background-color: var(--color4);
+    font-style: var(--color1);
+  }
+  .checkbox {
+    opacity: 0;
+    position: absolute;
   }
   
+  .label {
+    width: 20px;
+    height: 5px;
+    background-color:black;
+    display: flex;
+    border-radius:20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.5);
+  }
+  
+  .ball {
+    width: 12px;
+    height: 12px;
+    background-color: gray;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+
+  
+  /*  target the elemenent after the label*/
+  .checkbox:checked + .label .ball{
+    transform: translateX(15px);
+  }
+
+  .label i {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+  }
+    /* here ends the toggle code */
   /* Style the header */
   
   header {
@@ -76,7 +135,7 @@ body {
   }
   
   .flex-container a {
-    background-color: #f1f1f1;
+    background-color: beige;
     color: #333;
     text-align: center;
     text-decoration: none;
