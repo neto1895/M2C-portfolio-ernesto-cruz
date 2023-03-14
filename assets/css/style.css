@@ -102,7 +102,7 @@ body {
   
   /* Style the hero banner */
   
-  .hero-banner {
+  .banner {
     background-image: url('../images/baner2.png');
     background-position: center;
     background-size: cover;
@@ -113,7 +113,7 @@ body {
     height: 300px;
   }
   
-  .hero-banner h2 {
+  .banner h2 {
     font-size: 30px;
     text-align: center;
     max-width: 600px;
@@ -122,13 +122,13 @@ body {
   
   /* Style the main content */
   
-  .page-wrapper {
+  .main-portfolio {
     margin: 30px auto;
     max-width: 800px;
     padding: 0 20px;
   }
   
-  .page-section {
+  .sections {
     margin-bottom: 50px;
   }
   
@@ -138,13 +138,13 @@ body {
   
   /* Style the portfolio section */
   
-  .flex-container {
+  .work-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   
-  .flex-container a {
+  .work-container a {
     background-color: beige;
     color: #333;
     text-align: center;
@@ -155,16 +155,16 @@ body {
     transition: all 0.2s ease-in-out;
   }
   
-  .flex-container a:hover {
+  .work-container a:hover {
     background-color: #333;
     color: #fff;
   }
   
-  .flex-container h3 {
+  .work-container h3 {
     margin: 0;
   }
   
-  .flex-container span {
+  .work-container span {
     font-size: 14px;
   }
   
