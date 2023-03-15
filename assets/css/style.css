@@ -1,32 +1,30 @@
 /* Set default styles for the whole page */
 :root{
-  --color1: rgb(220, 245, 240);
-  --color2: gray;
-  --color3: #283957;
-  --color4: rgb(31 36 36);
-  --color5: rgb(20, 33, 43);
+  --color1: #cfbb61;   
+  --color2: 
+  --color3:
+  --color4: 
+  --color5: 
 }
 h2, p{
-  color: var(--color5);
-}
-h2.dark, p.dark{
-  color: var(--color1);
+  color: rgb(31 36 36);
 }
 
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     
   }
   /* toggle code */
   body.dark {
-    background-color: var(--color4);
-    font-style: var(--color1);
+    background-color: rgb(31 36 36);
   }
+
   .checkbox {
     opacity: 0;
-    position: absolute;
+    position:absolute;
   }
   
   .label {
@@ -53,46 +51,117 @@ body {
     transition: transform 0.2s linear;
   }
 
-  
   /*  target the elemenent after the label*/
   .checkbox:checked + .label .ball{
     transform: translateX(15px);
   }
 
   .label i {
-    color: white;
     font-size: 10px;
     font-weight: bold;
+    color: var(--color1);
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+
   }
     /* here ends the toggle code */
+
+    .transition {
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+    
+    /* Estilo inicial del elemento */
+    .popup {
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Estilo de la ventana emergente */
+    .popup .popup-content {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      z-index: 1;
+      top: 50px;
+      left: 100%;
+      margin-left: -210%;
+      padding: 10px;
+      background-image: url(../images/cv.png);
+      background-size: cover;
+      border: 1px solid var(--color1);
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+      transition: all 0.9s ease;
+      background-position: center;
+      color: var(--color1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300%;
+      width: 200%;
+    }
+    
+    /* Estilo del elemento cuando se coloca el cursor encima */
+    .popup:hover .popup-content {
+      visibility: visible;
+      opacity: 1;
+      top: 90px;
+    }
+
   /* Style the header */
   
   header {
     background-color: #333;
-    color: #fff;
+    color: var(--color1);
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 10px;
+    padding: 10px 10px 5px 00px;
   }
   
-  h1 {
+  header h1 {
     margin: 0;
+    padding: 5px 1% 5px 6%;
+    background-color: var(--color1);
+    color: #333;
   }
-  
-  nav a {
-    color: #fff;
-    margin-left: 20px;
+  /* Code for the links in the header */
+  nav a, .popup h2 {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    color: var(--color1);
     text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
   }
-  
-  nav a:hover {
-    text-decoration: underline;
+  nav a::after, 
+  .popup h2::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color1);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+  }
+
+  nav a:hover::after,
+  .popup h2:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
   
   /* Style the hero banner */
   
-  .hero-banner {
+  .banner {
     background-image: url('../images/baner2.png');
     background-position: center;
     background-size: cover;
@@ -103,7 +172,7 @@ body {
     height: 300px;
   }
   
-  .hero-banner h2 {
+  .banner h2 {
     font-size: 30px;
     text-align: center;
     max-width: 600px;
@@ -112,13 +181,13 @@ body {
   
   /* Style the main content */
   
-  .page-wrapper {
+  .main-portfolio {
     margin: 30px auto;
     max-width: 800px;
     padding: 0 20px;
   }
   
-  .page-section {
+  .sections {
     margin-bottom: 50px;
   }
   
@@ -128,13 +197,13 @@ body {
   
   /* Style the portfolio section */
   
-  .flex-container {
+  .work-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   
-  .flex-container a {
+  .work-container a {
     background-color: beige;
     color: #333;
     text-align: center;
@@ -145,16 +214,16 @@ body {
     transition: all 0.2s ease-in-out;
   }
   
-  .flex-container a:hover {
+  .work-container a:hover {
     background-color: #333;
     color: #fff;
   }
   
-  .flex-container h3 {
+  .work-container h3 {
     margin: 0;
   }
   
-  .flex-container span {
+  .work-container span {
     font-size: 14px;
   }
   
