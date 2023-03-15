@@ -1,8 +1,8 @@
 /* Set default styles for the whole page */
 :root{
-  --color1: rgb(220, 245, 240);
-  --color2: gray;
-  --color3: #283957;
+  --color1: #619acf;   
+  --color2: 
+  --color3:
   --color4: 
   --color5: 
 }
@@ -59,7 +59,7 @@ body {
   .label i {
     font-size: 10px;
     font-weight: bold;
-    color: rgba(255, 225, 0, 0.50);
+    color: var(--color1);
     font-size: 10px;
     font-weight: bold;
     font-style: normal;
@@ -70,7 +70,7 @@ body {
   
   header {
     background-color: #222;
-    color: #c6dded;
+    color: var(--color1);
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -83,24 +83,32 @@ body {
     margin: 0;
     padding: 10px 10px 5px 20px;
   }
-  
+  /* Code for the links in the header */
   nav a {
-    margin-right: 10px;
-    color: #cfd5de;
-    margin-left: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    color: var(--color1);
     text-decoration: none;
-    background-size: 100% 0.2em;
-    background-image: #cfd5de;
-    background-position: bottom;
-    transition: all 0.25s ease-in;
-
+    font-size: 15px;
+    font-weight: bold;
   }
-  
-  nav a:hover {
-    /* text-decoration: underline; */
-    background-size: 100% 100%;
-    background-color: #cfd5de;
-    /* background-color: #fff; */
+  nav a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color1);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+  }
+
+  nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
   
   /* Style the hero banner */
