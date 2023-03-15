@@ -3,33 +3,28 @@
   --color1: rgb(220, 245, 240);
   --color2: gray;
   --color3: #283957;
-  --color4: rgb(31 36 36);
-  --color5: rgb(20, 33, 43);
+  --color4: 
+  --color5: 
 }
 h2, p{
-  color: var(--color5);
-}
-h2.dark, p.dark{
-  color: var(--color1);
+  color: rgb(31 36 36);
 }
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     
   }
   /* toggle code */
   body.dark {
-
-    background-color: var(--color4);
-    font-style: var(--color1);
-
+    background-color: rgb(31 36 36);
   }
+
   .checkbox {
     opacity: 0;
-    position: absolute;
+    position:absolute;
   }
   
   .label {
@@ -43,7 +38,6 @@ body {
     padding: 5px;
     position: relative;
     transform: scale(1.5);
-
   }
   
   .ball {
@@ -57,15 +51,12 @@ body {
     transition: transform 0.2s linear;
   }
 
-  
-
   /*  target the elemenent after the label*/
   .checkbox:checked + .label .ball{
     transform: translateX(15px);
   }
 
   .label i {
-    color: white;
     font-size: 10px;
     font-weight: bold;
     color: rgba(255, 225, 0, 0.50);
@@ -78,26 +69,38 @@ body {
   /* Style the header */
   
   header {
-    background-color: #333;
-    color: #fff;
+    background-color: #222;
+    color: #c6dded;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 10px;
+    padding: 10px 10px 5px 20px;
   }
   
-  h1 {
+  header h1 {
     margin: 0;
+    padding: 10px 10px 5px 20px;
   }
   
   nav a {
-    color: #fff;
+    margin-right: 10px;
+    color: #cfd5de;
     margin-left: 20px;
     text-decoration: none;
+    background-size: 100% 0.2em;
+    background-image: #cfd5de;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+
   }
   
   nav a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    background-size: 100% 100%;
+    background-color: #cfd5de;
+    /* background-color: #fff; */
   }
   
   /* Style the hero banner */
