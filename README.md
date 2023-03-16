@@ -3,7 +3,7 @@
 
 ## Description
 
-This repo contains my **Portfolio** code. This portfolio will be continuosly updated as I keep learning and doing projects in the bootcap as well as in the coding comunnity. 
+This repo contains my **Portfolio** code. This portfolio will be continuosly updated as I keep learning and doing projects in the bootcamp as well as in the coding community. 
 
 ## Deployed application 
 
