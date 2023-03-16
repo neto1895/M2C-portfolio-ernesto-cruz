@@ -238,30 +238,62 @@ body {
     align-items: stretch;
   }
   
-  .work-container a {
-    background-color: beige;
+  .workbox {
+    background-color: rgba(255, 255, 255, 0);
+    background-size:100%;
+    background-blend-mode:overlay;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: #333;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
-    width: calc(33.33% - 20px);
+    min-height: 200px;
+    max-height: 2000px;
+    width: calc(50% - 20px);
     margin-bottom: 20px;
-    padding: 20px;
+    border: 3px solid var(--color1);
     transition: all 0.2s ease-in-out;
   }
-  
-  .work-container a:hover {
+  .workbox:first-child {
+    min-height: 300px;
+    flex-basis: 100%;
+  }
+
+  .workbox:hover {
     background-color: #333;
     color: #fff;
   }
   
-  .work-container h3 {
-    margin: 0;
+  .workbox div {
+    background-color: var(--color1);
+    padding: 5px 1% 5px 6%;
+    max-width: 45%;
+  }
+  
+  .workbox h3 {
+    font-size: 25px;
   }
   
   .work-container span {
-    font-size: 14px;
+    font-size: 20px;
   }
-  
+
+  .catspage {
+    background-image: url(../images/cats.jpg);
+  }
+  .prework-bootcamp {
+    background-image: url(../images/prework.png);
+  }
+  .module1challenge {
+    background-image: url(../images/challenge1.png);
+  }
+  .filler1 {
+    background-image: url(../images/hovereffect.gif);
+  }
+  .filler2 {
+    background-image: url(https://source.unsplash.com/random);
+  }
   /* Style the contact section */
 
   address {
@@ -314,12 +346,12 @@ body {
   }
   
   @media screen and (max-width: 768px) {
-    .flex-item,
-    .flex-item:first-child {
+    .workbox,
+    .workbox:first-child {
       flex-basis: 100%;
     }
   
-    .flex-item:first-child {
+    .workbox:first-child {
       min-height: 150px;
     }
   
@@ -328,7 +360,7 @@ body {
       text-align: center;
     }
   
-    .contact address {
+    address {
       flex-direction: column;
       align-items: flex-start;
     }
