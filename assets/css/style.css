@@ -2,7 +2,7 @@
 * {
   box-sizing: border-box;
 }
-
+/* This helps to keep the color palette consistent and makes it easy to change the colors globally by just modifying the variable's value. */
 :root{
   --color1: #cfbb61;   
   --color2: rgb(31 36 36);
@@ -36,6 +36,10 @@ body {
       background-color: var(--color1);
       color: var(--color4);
       }
+
+
+      
+
 
       /* toggle code */
         body.dark {
@@ -165,7 +169,20 @@ body {
     }
       .banner div {
       flex: 0 0 100%;
+      display: flex;
+      flex-direction: column;
       }
+      
+      .photo {
+        background-image: url(../images/profilepic.png);
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        border: 1px solid var(--color1);
+      }
+      
+      
       .banner h2 {
       font-size: 30px;
       text-align: center;
