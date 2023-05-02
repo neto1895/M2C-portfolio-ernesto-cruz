@@ -7,7 +7,7 @@ This repo contains my **Portfolio** code. This portfolio will be continuosly upd
 
 ## Deployed application 
 
-(https://neto1895.github.io/module2-challenge-ECR/)
+(https://neto1895.github.io/M2C-portfolio-ernesto-cruz/)
 
 The following image shows the Portfolio first look and functionality, I added a toggle in java for the darkmode:
 ![portfolio demo](./assets/images/portfoliopage.gif)
