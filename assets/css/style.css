@@ -282,11 +282,20 @@ body {
       .module1challenge {
       background-image: url(../images/challenge1.png);
       }
-      .filler1 {
-      background-image: url(../images/hovereffect.gif);
+      .P1_Lyrics_search-COLAB{
+      background-image: url(../images/lyrics_page.gif);
       }
-      .filler2 {
-      background-image: url(https://source.unsplash.com/random);
+      .Weather_Dashboard{
+        background-image: url(../images/c6.gif);
+      }
+      .WorkDayScheduler{
+        background-image: url(../images/c5.gif);
+      }
+      .Code-quiz-and-miscellaneous{
+        background-image: url(../images/c4.gif);
+      }
+      .password-generator{
+        background-image: url(../images/c3.gif);
       }
 
     /* Style the contact section */
