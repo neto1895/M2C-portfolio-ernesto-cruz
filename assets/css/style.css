@@ -272,7 +272,9 @@ body {
       .work-container span {
       font-size: 20px;
       }
-
+      .Sales-Tracker {
+      background-image: url(../images/project2.gif);
+      }
       .catspage {
       background-image: url(../images/cats.jpg);
       }
